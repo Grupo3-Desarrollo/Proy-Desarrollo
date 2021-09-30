@@ -2,7 +2,7 @@
 Este repositorio contendrá el proyecto del curso 'Desarrollo de Software'.
 
 ## Descripción
-Se implementará un Sistema de Tutoria que consiste en la 
+Se implementará un Sistema de Tutoría que consiste en la 
 Creación y uso de tutoriales en linea con la incorporación de un Chat Bot.
 
 ## Integrantes
