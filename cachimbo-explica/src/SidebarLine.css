@@ -1,0 +1,36 @@
+.sidebarLine {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.sidebarLine__icon {
+    color: rgb(150, 140, 140);
+}
+
+.sidebarLine__titulo {
+    flex: 1; /*usa lo mas que se pueda del container*/
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.sidebarLine:hover {
+    background-color: floralwhite;
+    cursor: pointer;
+}
+
+.sidebarLine:hover > .sidebarLine__icon {
+    color: cornflowerblue;
+}
+
+.sidebarLine.seleccionado {
+    background-color: floralwhite;
+}
+
+.sidebarLine.seleccionado > .sidebarLine__titulo {
+    font-weight: bold;
+}
+.sidebarLine.seleccionado > .sidebarLine__icon {
+    color: cornflowerblue;
+}
