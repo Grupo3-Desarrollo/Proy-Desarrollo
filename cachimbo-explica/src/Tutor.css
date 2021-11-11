@@ -1,0 +1,24 @@
+.tutor {
+    display: flex;
+    align-items: center;
+    width: 75%;
+}
+
+.tutor__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.tutor__content > p {
+    font-size: small !important;
+}
+
+/* .tutor__content > h4 {
+    
+} */
+
+.tutor__logo {
+    height: 120px !important;
+    width: 120px !important;
+    margin: 10px 50px;
+}

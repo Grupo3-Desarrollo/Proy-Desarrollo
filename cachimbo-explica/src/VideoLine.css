@@ -1,0 +1,26 @@
+.videoLine {
+    display: flex;
+    margin-bottom: 25px;
+    max-width: 700px;
+}
+
+.videoLine > img {
+    object-fit: contain;
+    width: 213px;
+    height: 121px;
+}
+
+.videoLine__content {
+    margin-left: 14px;
+}
+
+.videoLine__tutor {
+    font-size: 14px;
+    color: grey;
+}
+
+.videoLine__descripcion {
+    margin-top: 20px;
+    font-size: 14px;
+    color: grey;
+}

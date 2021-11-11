@@ -1,27 +1,36 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Header.css';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import AddIcon from '@mui/icons-material/Add';
 // import NotificationsIcon from '@mui/icons-material/Notifications';
 import { Avatar } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 function Header() {
+    const [inputBuscar, setInputBuscar] = useState('');
+
     return (
         <div className='header'>
             {/* <h1>I am a header</h1> */}
             <div className='header__izq'>
                 <MenuIcon />
-                <img 
-                    className='header__logo'
-                    src=''
-                    alt='logo'
-                />
+                <Link to='/'>
+                    <img 
+                        className='header__logo'
+                        src=''
+                        alt='logo'
+                    />
+                </Link>
             </div>
             
             <div className='header__input'>
-                <input placeholder='Buscar' type='text' />
-                <SearchIcon className='header__searchButton'/>
+                <input 
+                    onChange={e => setInputBuscar(e.target.value)} 
+                    value={inputBuscar} placeholder='Buscar' type='text' />
+                <Link to={`/search/${inputBuscar}`}>
+                    <SearchIcon className='header__searchButton'/>
+                </Link>
             </div>
 
             <div className='header__profile'>

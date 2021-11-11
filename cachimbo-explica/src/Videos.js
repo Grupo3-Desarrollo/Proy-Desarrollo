@@ -1,6 +1,5 @@
 import React from 'react';
 import VideoClase from './VideoClase';
-
 import './Videos.css';
 
 function Videos() {
